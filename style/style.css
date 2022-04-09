@@ -1,0 +1,679 @@
+/* Global */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+scroll-behavior: smooth;
+
+/* Header */
+.header {
+    padding: 50px 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #222;
+    transition: .3s all ease-in-out;
+    margin: 20px 25px;
+}
+
+.main-nav a:hover {
+    color: #e1ae9e;
+}
+
+.main-nav img {
+    width: 280px;
+}
+
+.main-nav a:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.fb {
+    background: url("../img/fb_dark.svg") center/cover;
+    width: 14px;
+    opacity: 0.7;
+
+}
+
+.fb:hover {
+    opacity: 1;
+}
+
+.ig {
+    background: url('../img/ig_dark.svg') center/cover;
+    width: 18px;
+    height: 18px;
+    opacity: 0.8;
+}
+
+.ig:hover {
+    opacity: 1;
+}
+
+/* News */
+
+
+
+.hero-news {
+    background:
+        url('../img/balloons.png') no-repeat bottom left/400px,
+        url('../img/confettis.svg') no-repeat fixed top -200px left/1000px,
+        #fed1de;
+    height: 530px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.hero-txt {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.btn__white {
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.news {
+    overflow: hidden;
+    position: relative;
+}
+
+.multi-news {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.multi-news .news {
+    width: calc(100% / 3);
+    margin-right: 12px;
+    height: 500px;
+    transition: 0.2s all ease-in-out;
+}
+
+.multi-news .news:nth-of-type(1) {
+    background: url(../img/parties.jpg) center/cover;
+    filter: grayscale(25);
+}
+
+.multi-news .news:nth-of-type(2) {
+    background: url(../img/mrs.jpg) center/cover;
+    filter: grayscale(25);
+}
+
+.multi-news .news:nth-of-type(3) {
+    background: url(../img/new.jpg) center/cover;
+    filter: grayscale(25);
+    margin-right: 0;
+}
+
+.multi-news .news:hover {
+    width: 50%;
+    filter: none;
+}
+
+.news-txt {
+    width: 100%;
+    height: 230px;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    line-height: 35px;
+    transition: 0.2s all ease-in-out;
+    transform: translateY(100%);
+}
+
+.news:hover .news-txt {
+    transform: translateY(0);
+}
+
+.btn__pink {
+    background-color: #e4a28d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.single-news .news {
+    max-width: 1200px;
+    height: 400px;
+    background: url(../img/nue-kids.jpg);
+    filter: grayscale(25);
+}
+
+.single-news .news:hover {
+    color: black;
+    background-color: #fff;
+    transition: linear 0.2s;
+    filter: none;
+}
+
+.katie {
+    max-width: 100%;
+    padding-top: 100px;
+}
+
+.photos {
+    background:
+        url('../img/about.jpg') no-repeat;
+    height: 530px;
+    position: relative;
+    margin-bottom: 12px;
+
+}
+
+.portrait {
+    max-width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 22%);
+    position: absolute;
+    left: 488px;
+    top: -57px;
+}
+
+.portrait img {
+    width: 170px;
+}
+
+.photos>p {
+    position: absolute;
+    top: 77px;
+    left: 418px;
+    transform: translateX(100px);
+    padding: 10px;
+    background-color: #fff;
+}
+
+.k-txt {
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin: 0 100px;
+
+}
+
+.k-txt h5 {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.k-txt h3 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.k-txt p {
+    padding-right: 70px;
+    padding-bottom: 20px;
+}
+
+.k-txt blockquote {
+    margin-left: 0;
+    padding-left: 35px;
+    margin-bottom: 40px;
+    border-left: 1px solid #fed1de;
+}
+
+.services {
+    padding-top: 100px;
+}
+
+.photo {
+    background:
+        url('../img/services.jpg') no-repeat right;
+    height: 530px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.s-txt {
+    width: 45%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+
+}
+
+.s-txt h5 {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.s-txt h3 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.s-txt p {
+    padding-right: 70px;
+    padding-bottom: 20px;
+}
+
+.s-txt ul {
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.wrapper-prices {
+
+    padding-top: 100px;
+}
+
+.wrap-head {
+    text-align: center;
+}
+
+.wrap-head h3 {
+    font-size: 28px;
+    line-height: 20px;
+
+}
+
+.tab-img {
+    margin: 30px 60px;
+    padding: 40px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 14px;
+
+}
+
+.tab-img .ballons {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 100%;
+
+}
+
+.ballons img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carre {
+    width: 200px;
+    height: 262px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carre h4,
+p {
+    margin: 10px;
+}
+
+.foot-price {
+    max-width: 1200px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.foot-price p {
+    padding-bottom: 20px;
+}
+
+.foot-price div a {
+    margin: 10px;
+}
+
+.foot-price .btn__white {
+    border: 1px solid black;
+}
+
+.areas {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.areas h3 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.areas ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+
+.areas li {
+
+    font-size: 20px;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+.areas p {
+    padding-bottom: 30px;
+}
+
+/* See my balloons */
+.see {
+    background: url('../img/confettis.svg') fixed top,
+        #fed1de;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+
+.see:hover {
+    scale: 0.2;
+}
+
+.see-txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.see-txt p {
+    padding-bottom: 30px;
+}
+
+.see .btn__white {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.see:hover {
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 25%);
+    transform: translate(0, -5px);
+}
+
+/* Swiper */
+.wrapper-swiper {
+    max-width: 1200px;
+    padding: 80px 0;
+    position: relative;
+    height: 100px;
+}
+.wrapper-swiper p {
+max-width: 70%;
+text-align: center;
+margin: 0 auto;
+}
+
+:root {
+    --swiper-theme-color: #000000;
+}
+
+@media screen and (max-width: 990px) {
+    .main {
+        padding: 10px;
+    }
+    .hero-news {
+        min-width: 100%;
+        min-height: 910px;
+        background:
+            url('../img/balloons.png') no-repeat right bottom,
+            url('../img/confettis.svg') no-repeat fixed top -200px left/100%,
+            #fed1de;
+        position: relative;
+    }
+
+    .hero-txt {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        transform: translateY(-50%, -50%);
+    }
+
+    .news {
+        position: relative;
+    }
+
+    .multi-news {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+
+    .multi-news .news {
+        width: 100%;
+        margin-right: 12px;
+        height: 420px;
+    }
+
+    .multi-news .news:nth-of-type(1) {
+        filter: none;
+    }
+
+    .multi-news .news:nth-of-type(2) {
+        filter: none;
+    } 
+
+    .multi-news .news:nth-of-type(3) {    
+        filter: none;
+    }
+
+    .multi-news .news:hover {
+        width: 100%;
+        filter: none;
+    }
+
+    .news .news-txt {
+        transform: none;
+    }
+
+    .single-news .news {
+        max-width: 1200px;
+        height: 400px;
+        background: url(../img/nue-kids.jpg);
+        filter: none;
+    }
+    .katie {
+       width: 100%;
+    padding-top: 100px;
+
+    }
+    
+    .photos {
+        width: 50%;
+        background:
+            url('../img/about.jpg') no-repeat center/100% ;
+        position: relative;
+        margin-bottom: 12px;
+    
+    }
+    .portrait {
+        position: absolute;
+        left: 300px;
+        top: -57px;
+    }
+    .photos>p {
+        position: absolute;
+        top: 77px;
+        left: 218px;
+        transform: translateX(100px);
+        }
+
+    .k-txt {
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        left: 100%;
+        margin: 0 40px;
+    }
+
+    .photo {
+        background:
+            url('../img/services.jpg') no-repeat right/50%;
+        height: 530px;
+        position: relative;
+        margin-bottom: 12px;
+    }
+
+    .areas li{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+
+    .hero-news {
+        min-width: 100%;
+        min-height: 910px;
+        background:
+            url('../img/balloons.png') no-repeat right bottom,
+            url('../img/confettis.svg') no-repeat fixed top -200px left/100%,
+            #fed1de;
+        position: relative;
+    }
+
+    .hero-txt {
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        transform: translateY(-50%, -50%);
+    }
+
+    .news {
+        /* overflow: hidden; */
+        position: relative;
+    }
+
+    .multi-news {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+
+    .multi-news .news {
+        width: 100%;
+        margin-right: 12px;
+        height: 420px;
+    }
+
+    .multi-news .news:nth-of-type(1) {
+        filter: none;
+    }
+
+    .multi-news .news:nth-of-type(2) {
+        filter: none;
+    } 
+
+    .multi-news .news:nth-of-type(3) {    
+        filter: none;
+    }
+
+    .multi-news .news:hover {
+        width: 100%;
+        filter: none;
+    }
+    .single-news .news {
+        max-width: 1200px;
+        height: 400px;
+        background: url(../img/nue-kids.jpg);
+        filter: none;
+    }
+
+    .photos {
+        width: 50%;
+        background:
+            url('../img/about.jpg') no-repeat center/100% ;
+        position: relative;
+        margin-bottom: 12px;
+    
+    }
+    .portrait {
+        position: absolute;
+        left: 200px;
+        top: -20px;
+    }
+    .photos>p {
+        position: absolute;
+        top: 115px;
+        left: 125px;
+        transform: translateX(100px);
+        }
+
+    .k-txt {
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        left: 100%;
+        margin: 0 40px;
+    }
+
+    .photo {
+        background:
+            url('../img/services.jpg') no-repeat right/50%;
+        height: 530px;
+        position: relative;
+        margin-bottom: 12px;
+        padding-bottom: 30px;
+    }
+    .s-txt{
+        width: 50%;
+        position: absolute;
+        right: 350px; 
+    }
+    .areas li{
+        padding: 10px;
+        font-size: 16px;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+}
+
